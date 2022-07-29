@@ -1,0 +1,188 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap");
+
+:root {
+    --text-colour: #000000;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: var(--text-colour);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* TABLETS AND BIGGER */
+@media (min-width:961px) {
+
+    /* Nav bar */
+    nav {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    nav>.logo {
+        height: 15vh;
+    }
+
+    nav>.links {
+        float: right;
+        height: 15vh;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 50vw;
+    }
+
+    nav>.links>.header-link {
+        font-weight: 700;
+        text-decoration: none;
+        height: 15vh;
+        line-height: 15vh;
+        color: #000000;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 0.9rem;
+    }
+
+    nav>.links>.selected-page-link {
+        color: #7413dc;
+    }
+
+    /* Main Body */
+
+    main>.purple-title {
+        color: #7413dc;
+        font-weight: 900;
+        width: 50vw;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        font-size: 4rem;
+    }
+
+    h2 {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    /* Footer */
+    footer {
+        margin-bottom: 0;
+        margin-top: 60vh;
+        background-color: #003982;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        min-height: 15vh;
+        height: auto;
+    }
+
+    footer>.nfp {
+        color: rgb(150, 150, 150);
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3vh;
+        margin-left: 0;
+    }
+
+    footer>.copyright {
+        color: rgb(150, 150, 150);
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0;
+        line-height: 3vh;
+    }
+}
+
+/* VERTICAL TABLETS AND SMALLER */
+@media (max-width:960px) {
+
+    /* Nav bar */
+    nav {
+        margin-top: 5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    nav>.logo {
+        display: none;
+    }
+
+    nav>.guiding-logo {
+        display: none;
+    }
+
+    nav>.links {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 50vw;
+    }
+
+    nav>.links>.header-link {
+        font-weight: 700;
+        text-decoration: none;
+        height: 7vh;
+        color: #000000;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 0.9rem;
+    }
+
+    nav>.links>.selected-page-link {
+        color: #7413dc;
+    }
+
+    /* Main Body */
+
+    main>.purple-title {
+        color: #7413dc;
+        font-weight: 900;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h2 {
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 1.3rem;
+    }
+
+    /* Footer */
+    footer {
+        margin-bottom: 0;
+        background-color: #003982;
+        padding: 0;
+        min-height: 15vh;
+        height: auto;
+    }
+
+    footer>.nfp {
+        color: rgb(150, 150, 150);
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+        line-height: 3vh;
+    }
+
+    footer>.copyright {
+        color: rgb(150, 150, 150);
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 2vh;
+        margin-bottom: 0;
+        line-height: 3vh;
+    }
+}
