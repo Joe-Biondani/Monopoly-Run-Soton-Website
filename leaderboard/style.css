@@ -217,29 +217,52 @@ body {
         font-size: 2rem;
     }
 
-    main>.list {
-        width: 100vw;
-        display: flex;
+    table {
+        border-spacing: 0;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    table tbody {
+        border-radius: 15px;
+    }
+
+    th {
+        background: rgb(219, 219, 219);
+    }
+
+    tr:nth-child(odd) {
+        background-color: #fafafa;
+        width: 90vw;
         padding: 0;
-        justify-content: space-evenly;
-        list-style: none;
-    }
-
-    main>.list>li {
-        text-decoration: none;
         text-align: center;
-        color: black;
     }
 
-    main>.list>li>img {
-        height: 10vh;
-    }
-
-    main>.list>li>h3>a {
-        font-size: 2rem;
-        text-decoration: none;
+    tr:nth-child(even) {
+        background-color: rgb(219, 219, 219);
+        padding: 0;
         text-align: center;
-        color: black;
+        width: 90vw;
+    }
+
+    table tbody .place {
+        width: 10vw;
+    }
+
+    table tbody .teamname {
+        width: 15vw;
+    }
+
+    table tbody .money {
+        width: 15vw;
+    }
+
+    th:first-of-type {
+        border-top-left-radius: 10px;
+    }
+
+    th:last-of-type {
+        border-top-right-radius: 10px;
     }
 
     /* Footer */

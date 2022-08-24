@@ -16,10 +16,9 @@
             <img src="https://cdn.glitch.global/1df27b13-6588-45d7-979b-2fc6782752e2/Smaller.png?v=1658003285975" class="logo" />
 
             <div class="links">
-                <a class="header-link selected-page-link" href="/dashboard">DASHBOARD</a>
-                <a class="header-link" href="/checkin">CHECK IN</a>
+                <a class="header-link" href="/dashboard">DASHBOARD</a>
+                <a class="header-link selected-page-link" href="/checkin">CHECK IN</a>
                 <a class="header-link" href="/leaderboard">LEADERBOARD</a>
-                <a class="header-link" href="/history">HISTORY</a>
                 <a class="header-link" href="/support">SUPPORT</a>
                 <a class="header-link" href="/logout">LOGOUT</a>
             </div>
@@ -172,6 +171,28 @@
                         cloned.getElementsByTagName("img")[0].src = res.data[i].Image
                         cloned.getElementsByTagName("h3")[0].getElementsByTagName("button")[0].innerText = res.data[i].PlaceName
 
+                      ok = async function() {
+                        await fetch('https://Soton-Monopoly-Run-Game-API.aviationjoe.repl.co/checkIfVisited', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        "ID": id,
+                                        "placeName": res.data[i].PlaceName
+                                    })
+                                }).then(result2 => {
+                                    result2.json().then(res2 => {
+                                        console.log(res2)
+                                        if (res2.status == 'ok') {
+                                            alert(res2.data)
+                                        } else {
+                                            alert("An error occurred!\n\n" + res.error)
+                                        }
+                                    })
+                                }).catch(console.log)
+                      }()
+                      
                         cloned.getElementsByTagName("h3")[0].getElementsByTagName("button")[0].onclick = async function() {
                             await geoFindMe();
 
