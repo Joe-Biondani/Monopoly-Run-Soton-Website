@@ -123,6 +123,7 @@ body {
 
     main>.info>.image {
         max-width: 50vw;
+        max-height: 20vh;
     }
 
     main>.info>h2 {
