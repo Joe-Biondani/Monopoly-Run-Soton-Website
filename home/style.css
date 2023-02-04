@@ -144,44 +144,21 @@ body {
         height: auto;
     }
 
-    /* Info 1 */
-    main>.info1 {
-        margin-top: 10vh;
-    }
-
     main>.info1>.image {
         float: right;
-        margin-right: 15vw;
-    }
-
-    main>.info1>h2 {
-        margin-left: 5vw;
     }
 
     main>.info1>h2>.stand-out {
         color: #006ddf;
     }
 
-    main>.info1>h3 {
-        margin-left: 7vw;
-        max-width: 40vw;
-    }
-
-    /* Info 1 */
-    main>.info2 {
-        margin-top: 30vh;
-    }
-
     main>.info2>.image {
         float: left;
-        margin-left: 15vw;
-        margin-top: 17vh;
     }
 
     main>.info2>h2 {
         float: right;
         text-align: right;
-        margin-right: 5vw;
     }
 
     main>.info2>h2>.stand-out {
@@ -190,9 +167,7 @@ body {
 
     main>.info2>h3 {
         float: right;
-        margin-right: 7vw;
         text-align: right;
-        max-width: 40vw;
     }
 
     /* Footer */
