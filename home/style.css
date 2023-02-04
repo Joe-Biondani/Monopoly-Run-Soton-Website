@@ -119,16 +119,19 @@ body {
     main>.info {
         min-height: 20vh;
         width: 100%;
+        display: flex;
     }
 
     main>.info>.image {
         max-width: 50vw;
-        max-height: 20vh;
+        height: 100%;
     }
 
     main>.info>h2 {
         font-weight: 400;
+        width: 50vw;
         font-size: 2rem;
+        height: auto;
     }
 
     main>.info>h2>.stand-out {
@@ -137,7 +140,8 @@ body {
 
     main>.info>h3 {
         font-size: 1.5rem;
-        max-width: 40vw;
+        width: 50vw;
+        height: auto;
     }
 
     /* Info 1 */
